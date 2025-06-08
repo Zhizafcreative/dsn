@@ -1,0 +1,42 @@
+# GitHub Pages Configuration
+title: "Digital Marketing Platform - Dashboard Dosen"
+description: "Platform pembelajaran Digital Marketing dengan teknologi Agentic AI untuk Program Studi Bisnis Digital"
+url: "https://yourdomain.github.io"
+baseurl: "/dsn"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .github/
+
+# Include files
+include:
+  - _pages
+
+# SEO settings
+lang: id
+author: "Program Studi Bisnis Digital"
+twitter:
+  username: yourusername
+  card: summary_large_image
+
+# Social media
+social:
+  name: "Digital Marketing Platform"
+  links:
+    - "https://github.com/yourusername/dsn"
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

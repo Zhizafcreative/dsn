@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen - Digital Marketing Platform</title>
+    <meta name="description" content="Platform pembelajaran Digital Marketing dengan teknologi Agentic AI untuk Program Studi Bisnis Digital">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DM Platform">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="logo-text">Digital Marketing Platform</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#dashboard" class="nav-link active">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span class="nav-text">Mata Kuliah</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#students" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span class="nav-text">Mahasiswa</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-assistant" class="nav-link">
+                        <i class="fas fa-robot"></i>
+                        <span class="nav-text">AI Assistant</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#analytics" class="nav-link">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="nav-text">Analytics</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#assignments" class="nav-link">
+                        <i class="fas fa-tasks"></i>
+                        <span class="nav-text">Tugas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#discussions" class="nav-link">
+                        <i class="fas fa-comments"></i>
+                        <span class="nav-text">Diskusi</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#settings" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-text">Pengaturan</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40x40/4F46E5/FFFFFF?text=DS" alt="Profile" class="profile-img">
+                <div class="profile-info">
+                    <span class="profile-name">Dr. Sarah Wijaya</span>
+                    <span class="profile-role">Dosen Digital Marketing</span>
+                </div>
+                <div class="profile-dropdown">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-title">
+                <h1>Dashboard</h1>
+                <span class="breadcrumb">Digital Marketing Platform</span>
+            </div>
+            <div class="header-actions">
+                <div class="notification-bell">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Cari..." class="search-input">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="main-content">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="content-section active">
+                <!-- Welcome Section -->
+                <div class="welcome-section">
+                    <div class="welcome-content">
+                        <h1 class="welcome-title">Selamat Datang, Dr. Sarah Wijaya</h1>
+                        <p class="welcome-subtitle">Platform pembelajaran Digital Marketing dengan teknologi Agentic AI</p>
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Total Mahasiswa</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Mata Kuliah Aktif</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Tugas Pending</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">89%</span>
+                                <span class="stat-label">AI Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Grid -->
+            <section class="dashboard-grid">
+                <!-- AI Assistant Card -->
+                <div class="dashboard-card ai-assistant-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-robot"></i>
+                            AI Teaching Assistant
+                        </h3>
+                        <span class="ai-status online">Online</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="ai-suggestions">
+                            <h4>Rekomendasi AI Hari Ini:</h4>
+                            <ul class="suggestion-list">
+                                <li>
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>15 mahasiswa membutuhkan bantuan tambahan pada materi SEO</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Engagement rate meningkat 23% setelah menggunakan video interaktif</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>Waktu optimal untuk posting materi: 09:00 - 11:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary ai-chat-btn">
+                            <i class="fas fa-comments"></i>
+                            Chat dengan AI Assistant
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="dashboard-card activities-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-clock"></i>
+                            Aktivitas Terbaru
+                        </h3>
+                        <a href="#" class="view-all-link">Lihat Semua</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-file-upload"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">Materi "Social Media Strategy" berhasil diupload</p>
+                                    <span class="activity-time">2 jam yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-user-check"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">25 mahasiswa menyelesaikan Quiz Digital Advertising</p>
+                                    <span class="activity-time">4 jam yang lalu</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p class="activity-text">3 pertanyaan baru di forum diskusi</p>
+                                    <span class="activity-time">6 jam yang lalu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Management -->
+                <div class="dashboard-card courses-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-book-open"></i>
+                            Manajemen Mata Kuliah
+                        </h3>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-plus"></i>
+                            Tambah Materi
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <div class="course-list">
+                            <div class="course-item">
+                                <div class="course-info">
+                                    <h4 class="course-name">Digital Marketing Fundamentals</h4>
+                                    <p class="course-progress">Progress: 75% | 45 mahasiswa aktif</p>
+                                </div>
+                                <div class="course-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Lihat</button>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-info">
+                                    <h4 class="course-name">Social Media Marketing</h4>
+                                    <p class="course-progress">Progress: 60% | 52 mahasiswa aktif</p>
+                                </div>
+                                <div class="course-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Lihat</button>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-info">
+                                    <h4 class="course-name">Digital Analytics</h4>
+                                    <p class="course-progress">Progress: 40% | 38 mahasiswa aktif</p>
+                                </div>
+                                <div class="course-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-primary">Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Overview -->
+                <div class="dashboard-card analytics-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-chart-bar"></i>
+                            Analytics Overview
+                        </h3>
+                        <select class="period-selector">
+                            <option>7 Hari Terakhir</option>
+                            <option>30 Hari Terakhir</option>
+                            <option>3 Bulan Terakhir</option>
+                        </select>
+                    </div>
+                    <div class="card-content">
+                        <div class="analytics-grid">
+                            <div class="metric">
+                                <span class="metric-label">Engagement Rate</span>
+                                <span class="metric-value">87%</span>
+                                <span class="metric-change positive">+12%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Completion Rate</span>
+                                <span class="metric-value">73%</span>
+                                <span class="metric-change positive">+8%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Avg. Score</span>
+                                <span class="metric-value">82.5</span>
+                                <span class="metric-change positive">+5.2</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Active Students</span>
+                                <span class="metric-value">142</span>
+                                <span class="metric-change positive">+18</span>
+                            </div>
+                        </div>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Interactive Chart akan ditampilkan di sini</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-card quick-actions-card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-bolt"></i>
+                            Quick Actions
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="action-grid">
+                            <button class="action-btn">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Buat Quiz Baru</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload Materi</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-bullhorn"></i>
+                                <span>Buat Pengumuman</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-calendar-plus"></i>
+                                <span>Jadwalkan Kelas</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-users"></i>
+                                <span>Kelola Mahasiswa</span>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-cog"></i>
+                                <span>Pengaturan</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Debug Panel (Remove in production) -->
+                <div class="dashboard-card debug-panel" style="margin-top: 2rem; border: 2px dashed #F59E0B;">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-bug"></i>
+                            Debug Navigation Test
+                        </h3>
+                        <button onclick="toggleDebugPanel()" class="btn btn-sm btn-outline">Toggle</button>
+                    </div>
+                    <div class="card-content" id="debugContent">
+                        <p style="color: #F59E0B; margin-bottom: 1rem;">🧪 Test semua menu navigation:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem;">
+                            <button onclick="testNav('dashboard')" class="btn btn-sm btn-primary">📊 Dashboard</button>
+                            <button onclick="testNav('courses')" class="btn btn-sm btn-primary">📚 Courses</button>
+                            <button onclick="testNav('students')" class="btn btn-sm btn-primary">👥 Students</button>
+                            <button onclick="testNav('ai-assistant')" class="btn btn-sm btn-primary">🤖 AI Assistant</button>
+                            <button onclick="testNav('analytics')" class="btn btn-sm btn-primary">📈 Analytics</button>
+                            <button onclick="testNav('assignments')" class="btn btn-sm btn-primary">📝 Assignments</button>
+                            <button onclick="testNav('discussions')" class="btn btn-sm btn-primary">💬 Discussions</button>
+                            <button onclick="testNav('settings')" class="btn btn-sm btn-primary">⚙️ Settings</button>
+                        </div>
+                        <div id="debugResults" style="margin-top: 1rem; padding: 1rem; background: #F3F4F6; border-radius: 0.5rem; font-family: monospace; font-size: 0.875rem;"></div>
+                    </div>
+                </div>
+
+                <!-- End Dashboard Grid -->
+                </div>
+            </section>
+
+            <!-- Mata Kuliah Section -->
+            <section id="courses" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Manajemen Mata Kuliah</h2>
+                    <p class="page-subtitle">Kelola mata kuliah Digital Marketing Anda</p>
+                    <div class="page-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Tambah Mata Kuliah
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Export Data
+                        </button>
+                    </div>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-image">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="course-status active">Aktif</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Digital Marketing Fundamentals</h3>
+                            <p class="course-description">Dasar-dasar pemasaran digital, strategi, dan implementasi</p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>45 Mahasiswa</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>16 Minggu</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>12 Tugas</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">Progress: 75%</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn btn-sm btn-outline">Edit</button>
+                            <button class="btn btn-sm btn-primary">Kelola</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-image">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="course-status active">Aktif</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Social Media Marketing</h3>
+                            <p class="course-description">Strategi pemasaran media sosial dan content creation</p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>52 Mahasiswa</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>14 Minggu</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>10 Tugas</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="progress-text">Progress: 60%</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn btn-sm btn-outline">Edit</button>
+                            <button class="btn btn-sm btn-primary">Kelola</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <div class="course-image">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="course-status active">Aktif</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Digital Analytics</h3>
+                            <p class="course-description">Analisis data digital dan pengukuran ROI marketing</p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>38 Mahasiswa</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>12 Minggu</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>8 Tugas</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <span class="progress-text">Progress: 40%</span>
+                        </div>
+                        <div class="course-actions">
+                            <button class="btn btn-sm btn-outline">Edit</button>
+                            <button class="btn btn-sm btn-primary">Kelola</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mahasiswa Section -->
+            <section id="students" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Manajemen Mahasiswa</h2>
+                    <p class="page-subtitle">Kelola data dan progress mahasiswa</p>
+                    <div class="page-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i>
+                            Tambah Mahasiswa
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-file-excel"></i>
+                            Import Excel
+                        </button>
+                    </div>
+                </div>
+
+                <div class="students-filters">
+                    <div class="filter-group">
+                        <select class="filter-select">
+                            <option>Semua Mata Kuliah</option>
+                            <option>Digital Marketing Fundamentals</option>
+                            <option>Social Media Marketing</option>
+                            <option>Digital Analytics</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>Semua Status</option>
+                            <option>Aktif</option>
+                            <option>Tidak Aktif</option>
+                            <option>Lulus</option>
+                        </select>
+                        <input type="text" class="search-filter" placeholder="Cari mahasiswa...">
+                    </div>
+                </div>
+
+                <div class="students-table-container">
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>Mahasiswa</th>
+                                <th>NIM</th>
+                                <th>Mata Kuliah</th>
+                                <th>Progress</th>
+                                <th>Nilai Rata-rata</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://via.placeholder.com/40x40/4F46E5/FFFFFF?text=AN" alt="Student" class="student-avatar">
+                                        <div>
+                                            <div class="student-name">Ahmad Nugroho</div>
+                                            <div class="student-email">ahmad.nugroho@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>2021001</td>
+                                <td>Digital Marketing Fundamentals</td>
+                                <td>
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="progress-text">85%</span>
+                                </td>
+                                <td>87.5</td>
+                                <td><span class="status-badge active">Aktif</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Lihat Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Edit">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Pesan">
+                                            <i class="fas fa-envelope"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://via.placeholder.com/40x40/10B981/FFFFFF?text=SP" alt="Student" class="student-avatar">
+                                        <div>
+                                            <div class="student-name">Sari Permata</div>
+                                            <div class="student-email">sari.permata@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>2021002</td>
+                                <td>Social Media Marketing</td>
+                                <td>
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 92%"></div>
+                                    </div>
+                                    <span class="progress-text">92%</span>
+                                </td>
+                                <td>91.2</td>
+                                <td><span class="status-badge active">Aktif</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Lihat Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Edit">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Pesan">
+                                            <i class="fas fa-envelope"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://via.placeholder.com/40x40/F59E0B/FFFFFF?text=RH" alt="Student" class="student-avatar">
+                                        <div>
+                                            <div class="student-name">Rizki Hidayat</div>
+                                            <div class="student-email">rizki.hidayat@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>2021003</td>
+                                <td>Digital Analytics</td>
+                                <td>
+                                    <div class="progress-bar small">
+                                        <div class="progress-fill" style="width: 67%"></div>
+                                    </div>
+                                    <span class="progress-text">67%</span>
+                                </td>
+                                <td>78.9</td>
+                                <td><span class="status-badge warning">Perlu Perhatian</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Lihat Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Edit">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-icon" title="Pesan">
+                                            <i class="fas fa-envelope"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <button class="btn btn-sm btn-outline">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <div class="page-numbers">
+                        <button class="page-number active">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number">3</button>
+                        <span class="page-dots">...</span>
+                        <button class="page-number">10</button>
+                    </div>
+                    <button class="btn btn-sm btn-outline">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- AI Assistant Section -->
+            <section id="ai-assistant" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">AI Teaching Assistant</h2>
+                    <p class="page-subtitle">Asisten AI untuk membantu proses pembelajaran</p>
+                    <div class="ai-status-indicator">
+                        <span class="status-dot online"></span>
+                        <span>AI Assistant Online</span>
+                    </div>
+                </div>
+
+                <div class="ai-dashboard">
+                    <div class="ai-stats-grid">
+                        <div class="ai-stat-card">
+                            <div class="ai-stat-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="ai-stat-info">
+                                <h3>1,247</h3>
+                                <p>Pertanyaan Dijawab</p>
+                            </div>
+                        </div>
+                        <div class="ai-stat-card">
+                            <div class="ai-stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="ai-stat-info">
+                                <h3>2.3s</h3>
+                                <p>Rata-rata Response Time</p>
+                            </div>
+                        </div>
+                        <div class="ai-stat-card">
+                            <div class="ai-stat-icon">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <div class="ai-stat-info">
+                                <h3>94%</h3>
+                                <p>Satisfaction Rate</p>
+                            </div>
+                        </div>
+                        <div class="ai-stat-card">
+                            <div class="ai-stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="ai-stat-info">
+                                <h3>156</h3>
+                                <p>Mahasiswa Terbantu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-features-grid">
+                        <div class="ai-feature-card">
+                            <div class="feature-header">
+                                <i class="fas fa-robot"></i>
+                                <h3>Smart Grading</h3>
+                            </div>
+                            <p>AI otomatis menilai tugas dan memberikan feedback</p>
+                            <div class="feature-stats">
+                                <span>24 tugas dinilai hari ini</span>
+                            </div>
+                            <button class="btn btn-primary">Kelola Grading</button>
+                        </div>
+
+                        <div class="ai-feature-card">
+                            <div class="feature-header">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Content Suggestions</h3>
+                            </div>
+                            <p>Rekomendasi materi pembelajaran yang dipersonalisasi</p>
+                            <div class="feature-stats">
+                                <span>12 saran baru tersedia</span>
+                            </div>
+                            <button class="btn btn-primary">Lihat Saran</button>
+                        </div>
+
+                        <div class="ai-feature-card">
+                            <div class="feature-header">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Learning Analytics</h3>
+                            </div>
+                            <p>Analisis mendalam tentang pola belajar mahasiswa</p>
+                            <div class="feature-stats">
+                                <span>15 insights baru</span>
+                            </div>
+                            <button class="btn btn-primary">Lihat Analytics</button>
+                        </div>
+
+                        <div class="ai-feature-card">
+                            <div class="feature-header">
+                                <i class="fas fa-comments"></i>
+                                <h3>Q&A Assistant</h3>
+                            </div>
+                            <p>AI menjawab pertanyaan mahasiswa secara otomatis</p>
+                            <div class="feature-stats">
+                                <span>89% pertanyaan terjawab otomatis</span>
+                            </div>
+                            <button class="btn btn-primary">Kelola Q&A</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Learning Analytics</h2>
+                    <p class="page-subtitle">Analisis mendalam performa pembelajaran</p>
+                    <div class="page-actions">
+                        <select class="period-selector">
+                            <option>7 Hari Terakhir</option>
+                            <option>30 Hari Terakhir</option>
+                            <option>3 Bulan Terakhir</option>
+                            <option>1 Tahun Terakhir</option>
+                        </select>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Export Report
+                        </button>
+                    </div>
+                </div>
+
+                <div class="analytics-overview">
+                    <div class="analytics-cards">
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <h3>Engagement Rate</h3>
+                                <span class="trend positive">+12%</span>
+                            </div>
+                            <div class="card-value">87%</div>
+                            <div class="card-chart">
+                                <div class="mini-chart">
+                                    <div class="chart-bar" style="height: 60%"></div>
+                                    <div class="chart-bar" style="height: 80%"></div>
+                                    <div class="chart-bar" style="height: 70%"></div>
+                                    <div class="chart-bar" style="height: 90%"></div>
+                                    <div class="chart-bar" style="height: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <h3>Completion Rate</h3>
+                                <span class="trend positive">+8%</span>
+                            </div>
+                            <div class="card-value">73%</div>
+                            <div class="card-chart">
+                                <div class="mini-chart">
+                                    <div class="chart-bar" style="height: 65%"></div>
+                                    <div class="chart-bar" style="height: 70%"></div>
+                                    <div class="chart-bar" style="height: 68%"></div>
+                                    <div class="chart-bar" style="height: 75%"></div>
+                                    <div class="chart-bar" style="height: 73%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <h3>Average Score</h3>
+                                <span class="trend positive">+5.2</span>
+                            </div>
+                            <div class="card-value">82.5</div>
+                            <div class="card-chart">
+                                <div class="mini-chart">
+                                    <div class="chart-bar" style="height: 77%"></div>
+                                    <div class="chart-bar" style="height: 79%"></div>
+                                    <div class="chart-bar" style="height: 81%"></div>
+                                    <div class="chart-bar" style="height: 83%"></div>
+                                    <div class="chart-bar" style="height: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-card">
+                            <div class="card-header">
+                                <h3>Active Students</h3>
+                                <span class="trend positive">+18</span>
+                            </div>
+                            <div class="card-value">142</div>
+                            <div class="card-chart">
+                                <div class="mini-chart">
+                                    <div class="chart-bar" style="height: 85%"></div>
+                                    <div class="chart-bar" style="height: 88%"></div>
+                                    <div class="chart-bar" style="height: 90%"></div>
+                                    <div class="chart-bar" style="height: 95%"></div>
+                                    <div class="chart-bar" style="height: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detailed-analytics">
+                        <div class="analytics-section">
+                            <h3>Performance by Course</h3>
+                            <div class="course-performance">
+                                <div class="performance-item">
+                                    <div class="course-info">
+                                        <span class="course-name">Digital Marketing Fundamentals</span>
+                                        <span class="course-students">45 mahasiswa</span>
+                                    </div>
+                                    <div class="performance-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">Engagement</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 89%"></div>
+                                            </div>
+                                            <span class="metric-value">89%</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">Completion</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 75%"></div>
+                                            </div>
+                                            <span class="metric-value">75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="performance-item">
+                                    <div class="course-info">
+                                        <span class="course-name">Social Media Marketing</span>
+                                        <span class="course-students">52 mahasiswa</span>
+                                    </div>
+                                    <div class="performance-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">Engagement</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 92%"></div>
+                                            </div>
+                                            <span class="metric-value">92%</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">Completion</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 68%"></div>
+                                            </div>
+                                            <span class="metric-value">68%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="performance-item">
+                                    <div class="course-info">
+                                        <span class="course-name">Digital Analytics</span>
+                                        <span class="course-students">38 mahasiswa</span>
+                                    </div>
+                                    <div class="performance-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">Engagement</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 78%"></div>
+                                            </div>
+                                            <span class="metric-value">78%</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">Completion</span>
+                                            <div class="metric-bar">
+                                                <div class="metric-fill" style="width: 45%"></div>
+                                            </div>
+                                            <span class="metric-value">45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-section">
+                            <h3>Learning Patterns</h3>
+                            <div class="learning-insights">
+                                <div class="insight-card">
+                                    <div class="insight-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h4>Peak Learning Hours</h4>
+                                        <p>Mahasiswa paling aktif antara 19:00-21:00</p>
+                                    </div>
+                                </div>
+                                <div class="insight-card">
+                                    <div class="insight-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h4>Device Usage</h4>
+                                        <p>67% akses melalui mobile, 33% desktop</p>
+                                    </div>
+                                </div>
+                                <div class="insight-card">
+                                    <div class="insight-icon">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <div class="insight-content">
+                                        <h4>Content Preference</h4>
+                                        <p>Video interaktif 3x lebih engaging</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tugas Section -->
+            <section id="assignments" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Manajemen Tugas</h2>
+                    <p class="page-subtitle">Kelola tugas dan penilaian mahasiswa</p>
+                    <div class="page-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Buat Tugas Baru
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-robot"></i>
+                            AI Auto-Grade
+                        </button>
+                    </div>
+                </div>
+
+                <div class="assignments-overview">
+                    <div class="assignment-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Tugas Pending</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">156</span>
+                                <span class="stat-label">Tugas Selesai</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Deadline Minggu Ini</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">85.2</span>
+                                <span class="stat-label">Rata-rata Nilai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coming-soon">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-tools"></i>
+                            <h3>Fitur Sedang Dikembangkan</h3>
+                            <p>Manajemen tugas dengan AI auto-grading akan segera hadir!</p>
+                            <div class="features-preview">
+                                <div class="feature-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Auto-Grading</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Analytics Tugas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Feedback Otomatis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diskusi Section -->
+            <section id="discussions" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Forum Diskusi</h2>
+                    <p class="page-subtitle">Kelola diskusi dan komunikasi dengan mahasiswa</p>
+                    <div class="page-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Buat Topik Baru
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-bullhorn"></i>
+                            Pengumuman
+                        </button>
+                    </div>
+                </div>
+
+                <div class="discussions-overview">
+                    <div class="discussion-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">47</span>
+                                <span class="stat-label">Topik Aktif</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-reply"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">312</span>
+                                <span class="stat-label">Total Balasan</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">89%</span>
+                                <span class="stat-label">Partisipasi</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Trending Topics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coming-soon">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-comments"></i>
+                            <h3>Forum Diskusi Interaktif</h3>
+                            <p>Platform diskusi dengan AI moderator akan segera hadir!</p>
+                            <div class="features-preview">
+                                <div class="feature-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Moderator</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tags"></i>
+                                    <span>Smart Tagging</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-search"></i>
+                                    <span>Advanced Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pengaturan Section -->
+            <section id="settings" class="content-section">
+                <div class="page-header">
+                    <h2 class="page-title">Pengaturan Platform</h2>
+                    <p class="page-subtitle">Konfigurasi dan personalisasi platform pembelajaran</p>
+                </div>
+
+                <div class="settings-overview">
+                    <div class="settings-categories">
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>Profil Dosen</h3>
+                                <p>Kelola informasi profil dan preferensi</p>
+                                <button class="btn btn-outline">Kelola Profil</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>Tema & Tampilan</h3>
+                                <p>Kustomisasi tema dan layout platform</p>
+                                <button class="btn btn-outline">Ubah Tema</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>Notifikasi</h3>
+                                <p>Atur preferensi notifikasi dan alert</p>
+                                <button class="btn btn-outline">Kelola Notifikasi</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>AI Assistant</h3>
+                                <p>Konfigurasi AI dan automation</p>
+                                <button class="btn btn-outline">Pengaturan AI</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>Keamanan</h3>
+                                <p>Pengaturan keamanan dan privasi</p>
+                                <button class="btn btn-outline">Kelola Keamanan</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="settings-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="settings-content">
+                                <h3>Backup & Export</h3>
+                                <p>Backup data dan export laporan</p>
+                                <button class="btn btn-outline">Kelola Data</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coming-soon">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Pengaturan Lanjutan</h3>
+                            <p>Fitur konfigurasi lengkap akan segera tersedia!</p>
+                            <div class="features-preview">
+                                <div class="feature-item">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Dark Mode</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-language"></i>
+                                    <span>Multi-language</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Mobile App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Overlay for mobile sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- AI Chat Modal -->
+    <div class="modal" id="aiChatModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>AI Teaching Assistant</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Halo Dr. Sarah! Saya siap membantu Anda dengan pertanyaan seputar pembelajaran digital marketing. Apa yang bisa saya bantu hari ini?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" placeholder="Ketik pesan Anda..." id="chatInput">
+                        <button class="chat-send-btn" id="chatSendBtn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

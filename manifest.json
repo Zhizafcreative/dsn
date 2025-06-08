@@ -1,0 +1,29 @@
+{
+  "name": "Digital Marketing Platform - Dashboard Dosen",
+  "short_name": "DM Platform",
+  "description": "Platform pembelajaran Digital Marketing dengan teknologi Agentic AI untuk Program Studi Bisnis Digital",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/4F46E5/FFFFFF?text=DM",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/4F46E5/FFFFFF?text=DM",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "business"],
+  "lang": "id",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
