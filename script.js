@@ -632,80 +632,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Debug Functions (Keep for testing)
-function testNav(sectionId) {
-    console.log(`🧪 Testing navigation to: ${sectionId}`);
+// Keep minimal debug functions for development
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    // Debug functions only available in development
+    window.testNav = function(sectionId) {
+        console.log(`🧪 Testing navigation to: ${sectionId}`);
+        showSection(sectionId);
 
-    const debugResults = document.getElementById('debugResults');
-    const section = document.getElementById(sectionId);
+        // Update nav state
+        document.querySelectorAll('.sidebar .nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+            }
+        });
+    };
 
-    if (!section) {
-        const error = `❌ Section "${sectionId}" not found!`;
-        console.error(error);
-        if (debugResults) {
-            debugResults.innerHTML += `<div style="color: #EF4444;">${error}</div>`;
-        }
-        return;
-    }
-
-    // Test navigation using new function
-    showSection(sectionId);
-
-    // Update nav link active state
-    document.querySelectorAll('.sidebar .nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-        }
-    });
-
-    // Update header title
-    const navText = document.querySelector(`[href="#${sectionId}"] .nav-text`)?.textContent || sectionId;
-    const headerTitle = document.querySelector('.header-title h1');
-    if (headerTitle) {
-        headerTitle.textContent = navText;
-    }
-
-    const success = `✅ Successfully navigated to "${sectionId}"`;
-    console.log(success);
-    if (debugResults) {
-        debugResults.innerHTML += `<div style="color: #10B981;">${success}</div>`;
-    }
-}
-
-function toggleDebugPanel() {
-    const debugContent = document.getElementById('debugContent');
-    if (debugContent) {
-        debugContent.style.display = debugContent.style.display === 'none' ? 'block' : 'none';
-    }
-}
-
-function checkAllSections() {
-    const sections = ['dashboard', 'courses', 'students', 'ai-assistant', 'analytics', 'assignments', 'discussions', 'settings'];
-    const debugResults = document.getElementById('debugResults');
-
-    if (debugResults) {
-        debugResults.innerHTML = '<div style="font-weight: bold; margin-bottom: 0.5rem;">🔍 Section Check Results:</div>';
+    window.checkAllSections = function() {
+        const sections = ['dashboard', 'courses', 'students', 'ai-assistant', 'analytics', 'assignments', 'discussions', 'settings'];
+        console.log('🔍 Checking sections...');
 
         let foundCount = 0;
         sections.forEach(sectionId => {
             const section = document.getElementById(sectionId);
-            const exists = section !== null;
-            if (exists) foundCount++;
-
-            const status = exists ? '✅ Found' : '❌ Missing';
-            const color = exists ? '#10B981' : '#EF4444';
-            debugResults.innerHTML += `<div style="color: ${color};">${sectionId}: ${status}</div>`;
+            if (section) foundCount++;
+            console.log(`${sectionId}: ${section ? '✅' : '❌'}`);
         });
 
-        debugResults.innerHTML += `<div style="font-weight: bold; margin-top: 0.5rem;">Total: ${foundCount}/${sections.length} sections found</div>`;
-    }
+        console.log(`Total: ${foundCount}/${sections.length} sections found`);
+    };
 }
-
-// Make debug functions globally available
-window.testNav = testNav;
-window.toggleDebugPanel = toggleDebugPanel;
-window.checkAllSections = checkAllSections;
 
 // Export for module usage (commented out for compatibility)
 // export { DigitalMarketingPlatform, utils };
